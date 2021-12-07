@@ -65,4 +65,6 @@ jobs:
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
       run: |-
+        kubectl apply -f yamls/service-account.yaml
+        kubectl apply -f yamls/cicd-demo-svc.yaml
         kubectl apply -f target/kubernetes/kubernetes.yml
