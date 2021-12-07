@@ -67,4 +67,5 @@ jobs:
       run: |-
         kubectl apply -f yamls/service-account.yaml
         kubectl apply -f yamls/cicd-demo-svc.yaml
+        kubectl delete svc cicd-demo
         kubectl apply -f target/kubernetes/kubernetes.yml
