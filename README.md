@@ -121,4 +121,8 @@ jobs:
 
 **Note:** If all the above steps are correct, whenever code commited, this repo will be built, native image pushed into GCR and workload will be deployed into kubernetes cluster along with Istio Ingress gateway.
         
-        
+## Upgrade next version
+
+1) Update artifactId and verion in pom.xml
+
+**Note:** when we upgrade the code, make sure upgrade the artifactID and version as well, so that new version of code also will be running along with old version in kubernetes cluster.
