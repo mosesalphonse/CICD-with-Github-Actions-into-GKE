@@ -69,3 +69,7 @@ jobs:
         kubectl apply -f yamls/cicd-demo-svc.yaml
         
         kubectl apply -f target/kubernetes/kubernetes.yml
+        
+        kubectl apply -f yamls/cicd-gateway.yaml
+        
+        kubectl apply -f yamls/cicd-virtualservice.yaml
