@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.acme</groupId>
-    <artifactId>getting-started-v3</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <artifactId>getting-started-v4</artifactId>
+    <version>1.0.4-SNAPSHOT</version>
 
     <properties>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
