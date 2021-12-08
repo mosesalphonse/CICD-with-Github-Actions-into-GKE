@@ -60,7 +60,7 @@ jobs:
         
     # Build and Push the Docker image to Google Container Registry
     - name: Build with Maven
-      run: mvn -B clean package -Dquarkus.container-image.push=true --file pom.xml
+      run: mvn -B clean package -Dnative -Dquarkus.container-image.push=true --file pom.xml
 
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
